@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "069d4b0e-1e9b-4352-b226-80d4e048bb12",
+		"name": "CurrencyConvertor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32313950",
+		"_collection_link": "https://personal-7626.postman.co/workspace/Personal-Workspace~f734408a-fba2-49bd-9d86-435ddf443933/collection/32313950-069d4b0e-1e9b-4352-b226-80d4e048bb12?action=share&source=collection_link&creator=32313950"
+	},
+	"item": [
+		{
+			"name": "GetExchangeRates",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pblVzZXIiLCJ1bmlxdWVfbmFtZSI6IjBiNmE4ODIyLWZhNzUtNDM3MC04ZjUxLTZhZjJkNjI1YjNhZiIsImp0aSI6IjI0MTM0OTU2LTc1NjYtNDliYS1hYWRkLTg2NzAzNmI2OTBhNSIsIkNsaWVudElkIjoiYWRtaW5Vc2VyXzE2MDM1NzFiLTM1YzEtNDA4ZC1iOWIzLWUzYTBlNTc3OTJiMCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiZXhwIjoxNzM5NzEzMjk5LCJpc3MiOiJDdXJyZW5jeUNvbnZlcnRvci5jb20iLCJhdWQiOiJDdXJyZW5jeUNvbnZlcnRvci5jb20ifQ.WymMutF2gmz8LudNMEQF_oGLwn-vPRfCT86z-cWBhmg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7022/api/latest/1/AED",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7022",
+					"path": [
+						"api",
+						"latest",
+						"1",
+						"AED"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetExchangeRates_FrankFutherApi",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pblVzZXIiLCJ1bmlxdWVfbmFtZSI6IjZkYjFlMzc1LWI5ZjQtNDY2Yy1iZTE1LTIxM2I4NGMwYWRiYiIsImp0aSI6IjdmZTI2NGM5LWY5YjctNDFkOC05MGQ0LWNjZjNjYWE0ZGExMSIsIkNsaWVudElkIjoiYWRtaW5Vc2VyXzBjMWIxNTA0LTA0ODQtNGEzMy05NzNjLWNjY2JmMjI1NzBjYSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiZXhwIjoxNzM5NzA0OTA5LCJpc3MiOiJDdXJyZW5jeUNvbnZlcnRvci5jb20iLCJhdWQiOiJDdXJyZW5jeUNvbnZlcnRvci5jb20ifQ.eUm0NKzqa00zZg2JiKdN_1fBkK8wIut6geZBXIQO1FU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7022/api/latest/3/EUR",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7022",
+					"path": [
+						"api",
+						"latest",
+						"3",
+						"EUR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetHistoricalExchangeRates",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pblVzZXIiLCJ1bmlxdWVfbmFtZSI6IjcwMDk2MWIzLTJmNmMtNGJkMy1iM2MyLTM5NTQzMmY4YTA4MyIsImp0aSI6IjNmMzFjZWE4LWM1MmUtNDZlOC1hYzc4LTA1Y2Y2YmQzNzMzOCIsIkNsaWVudElkIjoiYWRtaW5Vc2VyXzQ1ZTk2YmE1LTEyZGMtNDg0Mi04MGQxLTE5YjQ4YjM3M2QxNyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiZXhwIjoxNzM5Njg2MjUyLCJpc3MiOiJDdXJyZW5jeUNvbnZlcnRvci5jb20iLCJhdWQiOiJDdXJyZW5jeUNvbnZlcnRvci5jb20ifQ.KAQfqrAFBaZQwfNbGzFq_NNZ3_ulXEFCoXplMxz7Pp0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7022/api/1/2000-01-04/2001-01-05/EUR",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7022",
+					"path": [
+						"api",
+						"1",
+						"2000-01-04",
+						"2001-01-05",
+						"EUR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetHistoricalExchangeRates FrankFuterApi",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pblVzZXIiLCJ1bmlxdWVfbmFtZSI6IjcwMDk2MWIzLTJmNmMtNGJkMy1iM2MyLTM5NTQzMmY4YTA4MyIsImp0aSI6IjNmMzFjZWE4LWM1MmUtNDZlOC1hYzc4LTA1Y2Y2YmQzNzMzOCIsIkNsaWVudElkIjoiYWRtaW5Vc2VyXzQ1ZTk2YmE1LTEyZGMtNDg0Mi04MGQxLTE5YjQ4YjM3M2QxNyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiZXhwIjoxNzM5Njg2MjUyLCJpc3MiOiJDdXJyZW5jeUNvbnZlcnRvci5jb20iLCJhdWQiOiJDdXJyZW5jeUNvbnZlcnRvci5jb20ifQ.KAQfqrAFBaZQwfNbGzFq_NNZ3_ulXEFCoXplMxz7Pp0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7022/api/3/2000-01-04/2001-01-05/EUR",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7022",
+					"path": [
+						"api",
+						"3",
+						"2000-01-04",
+						"2001-01-05",
+						"EUR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConvertExchangeRate",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pblVzZXIiLCJ1bmlxdWVfbmFtZSI6Ijg1MzQ2ZTUzLWQ2NTAtNDYyYS04ZDJlLWE2MWY1ZWNhOTVlMCIsImp0aSI6ImIwMTA4MDA0LTlkNDUtNDBjOC1hNjZjLTA3OTkzMDkxOTM5ZSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6WyJBZG1pbiIsIkd1ZXN0Il0sImV4cCI6MTczOTQ4MzIxNiwiaXNzIjoiQ3VycmVuY3lDb252ZXJ0b3IuY29tIiwiYXVkIjoiQ3VycmVuY3lDb252ZXJ0b3IuY29tIn0.sLIlUqunSchfZujOfdhKgvt0Df9todxRGfuqM6Z6W9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7022/api/v1/Currency/ConvertExchangeRates/0/base/GBP",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7022",
+					"path": [
+						"api",
+						"v1",
+						"Currency",
+						"ConvertExchangeRates",
+						"0",
+						"base",
+						"GBP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConvertExchangeRate_FrankFuterApi",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pblVzZXIiLCJ1bmlxdWVfbmFtZSI6Ijg1MzQ2ZTUzLWQ2NTAtNDYyYS04ZDJlLWE2MWY1ZWNhOTVlMCIsImp0aSI6ImIwMTA4MDA0LTlkNDUtNDBjOC1hNjZjLTA3OTkzMDkxOTM5ZSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6WyJBZG1pbiIsIkd1ZXN0Il0sImV4cCI6MTczOTQ4MzIxNiwiaXNzIjoiQ3VycmVuY3lDb252ZXJ0b3IuY29tIiwiYXVkIjoiQ3VycmVuY3lDb252ZXJ0b3IuY29tIn0.sLIlUqunSchfZujOfdhKgvt0Df9todxRGfuqM6Z6W9w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7022/api/v1/Currency/ConvertExchangeRates/0/base/GBP",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7022",
+					"path": [
+						"api",
+						"v1",
+						"Currency",
+						"ConvertExchangeRates",
+						"0",
+						"base",
+						"GBP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetToken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7022/api/v1/Identity/GetToken/adminUser",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7022",
+					"path": [
+						"api",
+						"v1",
+						"Identity",
+						"GetToken",
+						"adminUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
